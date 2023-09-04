@@ -181,13 +181,13 @@ nav ul li a.active {
 
 nav ul li a::after {
   content: "";
-  width: 0%;
-  height: 2px;
+  width: 0;
+  height: 1.5px;
   background: var(--base-color);
 
   position: absolute;
   left: 0;
-  bottom: -1.5rem;
+  bottom: -1.65rem;
 
   transition: width 0.2s;
 }

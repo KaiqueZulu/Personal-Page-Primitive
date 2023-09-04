@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="../../CSS/mataMosquito.css" />
+    <script>
+      function iniciarJogo() {
+        var nivel = document.getElementById("nivel").value;
+        if (nivel === "") {
+          alert("Selecione um nivel para iniciar o jogo");
+          return false;
+        }
+        window.location.href = "game?" + nivel;
+      }
+    </script>
+    <script src="../../JS/mataMosquito.js"></script>
+  </head>
+
+  <body onresize="AjustarTamanhoDoPalco()">
+    <div class="painel">
+      <div class="vidas">
+        <img id="v1" src="../../assets/fotos/coracao_cheio.png" />
+        <img id="v2" src="../../assets/fotos/coracao_cheio.png" />
+        <img id="v3" src="../../assets/fotos/coracao_cheio.png" />
+      </div>
+      <div class="cronometro">
+        Tempo restante: <span id="cronometro"></span>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("cronometro").innerHTML = tempo;
+
+      var CriaMosca = setInterval(function () {
+        PosicaoRandomica();
+      }, criaMosquitoTempo);
+    </script>
+  </body>
+</html>

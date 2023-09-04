@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="../../CSS/mataMosquito.css" />
+    <script>
+      function iniciarJogo() {
+        var nivel = document.getElementById("nivel").value;
+        if (nivel === "") {
+          alert("Selecione um nivel para iniciar o jogo");
+          return false;
+        }
+        window.location.href = "game?" + nivel;
+      }
+    </script>
+    <script src="../../JS/mataMosquito.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="d-flex justify-content-center">
+            <img src="../../assets/fotos/game_over.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="d-flex justify-content-center">
+            <button
+              type="button"
+              class="btn btn-dark btn-lg"
+              onclick="window.location.href = './killFly.html'"
+            >
+              Reiniciar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

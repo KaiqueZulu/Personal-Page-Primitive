@@ -28,7 +28,7 @@ var cronometro = setInterval(function(){
     if(tempo < 0){
         clearInterval(cronometro)
         clearInterval(CriaMosca)
-        window.location.href = "victory"
+        window.location.href = "victory.html"
     }
     else{
         document.getElementById("cronometro").innerHTML = tempo
@@ -39,7 +39,7 @@ function PosicaoRandomica(){
     document.getElementById("mosquito").remove()
 
         if(vidas > 3){
-        window.location.href = "gameOver"
+        window.location.href = "gameOver.html"
         }
         else{
         document.getElementById('v' + vidas).src="../../assets/fotos/coracao_vazio.png"
