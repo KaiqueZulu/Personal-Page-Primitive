@@ -17,7 +17,7 @@ Criei uma pagina para além da apresentação pessoal mostrar um pouco dos meus 
 <br>
 
 <p align="center">
-  <img alt="MatDev Page" src="assets/fotos/previous_page.PNG" width="100%">
+  <img alt="MatDev Page" src="assets/images/previous_page.PNG" width="100%">
 </p>
 
 ## 🚀 Tecnologias

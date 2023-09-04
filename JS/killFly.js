@@ -42,7 +42,7 @@ function PosicaoRandomica(){
         window.location.href = "gameOver.html"
         }
         else{
-        document.getElementById('v' + vidas).src="../assets/fotos/coracao_vazio.png"
+        document.getElementById('v' + vidas).src="../assets/images/empty_heart.png"
         vidas++
          }
      }
@@ -53,7 +53,7 @@ function PosicaoRandomica(){
     posicaoy = posicaoy < 0 ? 0 : posicaoy
 
     var mosquito = document.createElement("img")
-    mosquito.src = "../assets/fotos/mosquito.png"
+    mosquito.src = "../assets/images/fly.png"
     mosquito.className = tamanhoAleatorio() + " " + ladoAleatorio()
     mosquito.style.left = posicaox + "px"
     mosquito.style.top = posicaoy + "px"
