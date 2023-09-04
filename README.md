@@ -41,4 +41,4 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Feito com ♥ by MatDev :nerd_face: 
+Feito com ♥ by Kaique Pires :nerd_face: 

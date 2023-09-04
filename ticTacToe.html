@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Tic Tac Toe</title>
-    <link rel="stylesheet" type="text/css" href="../../CSS/ticTacToe.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-</head>
+    <link rel="stylesheet" type="text/css" href="./CSS/ticTacToe.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  </head>
 
-<body>
-    <div class='game'></div>
-    <button class="btn" onclick="tic_tac_toe.restart()" title="Restart this game">Restart</button>
+  <body>
+    <div class="game"></div>
+    <button
+      class="btn"
+      onclick="tic_tac_toe.restart()"
+      title="Restart this game"
+    >
+      Restart
+    </button>
 
-    <script src="../../JS/ticTacToe.js"></script>
+    <script src="./JS/ticTacToe.js"></script>
     <script>
-        tic_tac_toe.init(document.querySelector('.game'));
-        tic_tac_toe.start();
+      tic_tac_toe.init(document.querySelector(".game"));
+      tic_tac_toe.start();
     </script>
-</body>
-
+  </body>
 </html>
